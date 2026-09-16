@@ -1,63 +1,13 @@
-# .gitignore file
-#
-# Set up for Microchip/MPLAB X development
-#
-# John Haroian
-# Greg Mrozek
-#
-# Updated May 30, 2025
+# Ignore everything in nbproject
+**/*.X/nbproject/*
 
-# MPLAB X IDE (Netbeans) specific
-**/*.X/~*.*
-**/*.X/build/
-**/*.X/debug/
-**/*.X/dist/
-**/*.X/disassembly/
-**/*.X/.generated_files/
+# Keep essential project metadata
+!**/*.X/nbproject/project.xml
+!**/*.X/nbproject/configurations.xml
+
+# Ignore private and generated files
 **/*.X/nbproject/private/
 **/*.X/nbproject/*.mk
 **/*.X/nbproject/*.bash
 **/*.X/nbproject/Makefile-genesis.properties
-**/*.X/queuelogs/
-
-# MCC specific
-**/*.X/*mc3.bak*
-**/*.X/*.bak*/
-
-# Large Files
-*.zip
-
-# ==========================================
-# MPLAB X IDE / NetBeans Build Output
-# ==========================================
-**/build/
-**/dist/
-**/disassembly/
-**/debug/
-
-# Object files and executables
-*.o
-*.ko
-*.obj
-*.elf
-*.hex
-*.cof
-*.map
-*.sym
-*.log
-*.inx
-
-# ==========================================
-# Private / User-Specific Settings
-# ==========================================
-# This directory contains local paths and user preferences 
-**/nbproject/private/
-
-# ==========================================
-# OS / Editor Artifacts
-# ==========================================
-.DS_Store
-Thumbs.db
-*.bak
-**/*.X/nbproject/
-**/nbproject/
+**/*.X/nbproject/Package-*.xml
