@@ -1,0 +1,63 @@
+# .gitignore file
+#
+# Set up for Microchip/MPLAB X development
+#
+# John Haroian
+# Greg Mrozek
+#
+# Updated May 30, 2025
+
+# MPLAB X IDE (Netbeans) specific
+**/*.X/~*.*
+**/*.X/build/
+**/*.X/debug/
+**/*.X/dist/
+**/*.X/disassembly/
+**/*.X/.generated_files/
+**/*.X/nbproject/private/
+**/*.X/nbproject/*.mk
+**/*.X/nbproject/*.bash
+**/*.X/nbproject/Makefile-genesis.properties
+**/*.X/queuelogs/
+
+# MCC specific
+**/*.X/*mc3.bak*
+**/*.X/*.bak*/
+
+# Large Files
+*.zip
+
+# ==========================================
+# MPLAB X IDE / NetBeans Build Output
+# ==========================================
+**/build/
+**/dist/
+**/disassembly/
+**/debug/
+
+# Object files and executables
+*.o
+*.ko
+*.obj
+*.elf
+*.hex
+*.cof
+*.map
+*.sym
+*.log
+*.inx
+
+# ==========================================
+# Private / User-Specific Settings
+# ==========================================
+# This directory contains local paths and user preferences 
+**/nbproject/private/
+
+# ==========================================
+# OS / Editor Artifacts
+# ==========================================
+.DS_Store
+Thumbs.db
+*.bak
+**/*.X/nbproject/
+**/nbproject/
